@@ -6,7 +6,7 @@ pull_requests:
 skip_tags: true
 
 image:
-- Visual Studio 2019
+- Visual Studio 2017
 
 configuration: Release
 
@@ -20,11 +20,11 @@ for:
 -
   matrix:
     only:
-      - image: Visual Studio 2019
+      - image: Visual Studio 2017
   before_build:
     - git submodule update --init --recursive
     - nuget restore cs/engine.sln
-    - cmd: set DEVENV="%VS142COMNTOOLS%\..\IDE\devenv.exe" && %DEVENV% "cs/engine.sln" /upgrade
+    - cmd: set DEVENV="%VS141COMNTOOLS%\..\IDE\devenv.exe" && %DEVENV% "cs/engine.sln" /upgrade
   build:
     parallel: true
     project: cs/engine.sln
