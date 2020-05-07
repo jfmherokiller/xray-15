@@ -1,4 +1,10 @@
+md res\
 md res\bin\
+md res\gamedata\
+
+cd cs\resources\
+copy * ..\..\res\gamedata\
+cd ..\..\
 
 if %CONFIGURATION%==Debug if %PLATFORM%==x86 goto :DX86
 if %CONFIGURATION%==Debug if %PLATFORM%==x64 goto :DX64
