@@ -36,7 +36,6 @@ for:
     - cmd: set DEVENV="%VS141COMNTOOLS%\..\IDE\devenv.exe" && %DEVENV% "cs/engine.sln" /upgrade
   build:
     project: cs/engine.sln
-    parallel: true
     verbosity: minimal
   after_build:
     - cmd: cd cs && xr_pack_build.cmd
