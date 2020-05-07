@@ -10,7 +10,6 @@ image:
 
 configuration:
 - Debug
-- Mixed
 - Release
 
 platform:
