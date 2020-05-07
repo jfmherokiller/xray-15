@@ -33,8 +33,7 @@ for:
   before_build:
     - git submodule update --init --recursive
     - nuget restore cs/engine.sln
-    - set DEVENV="%VS141COMNTOOLS%\..\IDE\devenv.exe"
-    - %DEVENV% "cs/engine.sln" /upgrade
+    - cmd: set DEVENV="%VS141COMNTOOLS%\..\IDE\devenv.exe" && %DEVENV% "cs/engine.sln" /upgrade
   build:
     project: cs/engine.sln
     parallel: true
