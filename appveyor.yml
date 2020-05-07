@@ -29,6 +29,7 @@ for:
     - nuget restore cs/engine.sln
     - cmd: set DEVENV="%VS141COMNTOOLS%\..\IDE\devenv.exe" && %DEVENV% "cs/engine.sln" /upgrade
   build:
+    parallel: true
     project: cs/engine.sln
     verbosity: minimal
   after_build:
