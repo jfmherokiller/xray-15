@@ -19,61 +19,61 @@ goto :EOF
 :DX86
 cd ..\bin\Win32\Debug
 call :COPY_ENGINE
-7z a OpenXRay.ClearSky.Dx86.7z .\*
+7z a OpenXRay.ClearSky.Dx86.7z .\* -bb
 
 cd ..\bin\Win32\Debug
 call :COPY_SYMBOLS
-7z a OpenXRay.ClearSky.Symbols.Dx86.7z .\*
+7z a OpenXRay.ClearSky.Symbols.Dx86.7z .\* -bb
 goto :EOF
 
 :DX64
 cd ..\bin\Win64\Debug
 call :COPY_ENGINE
-7z a OpenXRay.ClearSky.Dx64.7z .\*
+7z a OpenXRay.ClearSky.Dx64.7z .\* -bb
 
 cd ..\bin\Win64\Debug
 call :COPY_SYMBOLS
-7z a OpenXRay.ClearSky.Symbols.Dx64.7z .\*
+7z a OpenXRay.ClearSky.Symbols.Dx64.7z .\* -bb
 goto :EOF
 
 :MX86
 cd ..\bin\Win32\Mixed
 call :COPY_ENGINE
-7z a OpenXRay.ClearSky.Mx86.7z .\*
+7z a OpenXRay.ClearSky.Mx86.7z .\* -bb
 
 cd ..\bin\Win32\Mixed
 call :COPY_SYMBOLS
-7z a OpenXRay.ClearSky.Symbols.Mx86.7z .\*
+7z a OpenXRay.ClearSky.Symbols.Mx86.7z .\* -bb
 goto :EOF
 
 :MX64
 cd ..\bin\Win64\Mixed
 call :COPY_ENGINE
-7z a OpenXRay.ClearSky.Mx64.7z .\*
+7z a OpenXRay.ClearSky.Mx64.7z .\* -bb
 
 cd ..\bin\Win64\Mixed
 call :COPY_SYMBOLS
-7z a OpenXRay.ClearSky.Symbols.Mx64.7z .\*
+7z a OpenXRay.ClearSky.Symbols.Mx64.7z .\* -bb
 goto :EOF
 
 :RX86
 cd ..\bin\Win32\Release
 call :COPY_ENGINE
-7z a OpenXRay.ClearSky.Rx86.7z .\*
+7z a OpenXRay.ClearSky.Rx86.7z .\* -bb
 
 cd ..\bin\Win32\Release
 call :COPY_SYMBOLS
-7z a OpenXRay.ClearSky.Symbols.Rx86.7z .\*
+7z a OpenXRay.ClearSky.Symbols.Rx86.7z .\* -bb
 goto :EOF
 
 :RX64
 cd ..\bin\Win64\Release
 call :COPY_ENGINE
-7z a OpenXRay.ClearSky.Rx64.7z .\*
+7z a OpenXRay.ClearSky.Rx64.7z .\* -bb
 
 cd ..\bin\Win64\Release
 call :COPY_SYMBOLS
-7z a OpenXRay.ClearSky.Symbols.Rx64.7z .\*
+7z a OpenXRay.ClearSky.Symbols.Rx64.7z .\* -bb
 goto :EOF
 
 :COPY_ENGINE
