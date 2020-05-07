@@ -6,7 +6,7 @@ pull_requests:
 skip_tags: true
 
 image:
-- Visual Studio 2015
+- Visual Studio 2017
 
 configuration:
 - Debug
@@ -29,11 +29,11 @@ for:
 -
   matrix:
     only:
-      - image: Visual Studio 2015
+      - image: Visual Studio 2017
   before_build:
     - git submodule update --init --recursive
     - nuget restore cs/engine.sln
-    - cmd: set DEVENV="%VS140COMNTOOLS%\..\IDE\devenv.exe" && %DEVENV% "cs/engine.sln" /upgrade
+    - cmd: set DEVENV="%VS141COMNTOOLS%\..\IDE\devenv.exe" && %DEVENV% "cs/engine.sln" /upgrade
   build:
     project: cs/engine.sln
     parallel: true
