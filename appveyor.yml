@@ -33,6 +33,7 @@ for:
   before_build:
     - git submodule update --init --recursive
     - nuget restore cs/engine.sln
+    - devenv "cs/engine.sln" /upgrade
   build:
     project: cs/engine.sln
     parallel: true
