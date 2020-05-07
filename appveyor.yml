@@ -17,11 +17,6 @@ platform:
 - x64
 - x86
 
-matrix:
-  exclude:
-    - image: Ubuntu
-      configuration: Mixed
-
 cache:
 - src/packages -> **/packages.config
 
@@ -38,7 +33,7 @@ for:
     project: cs/engine.sln
     verbosity: minimal
   after_build:
-    - cs/xr_pack_build.cmd
+    - xr_pack_build.cmd
   artifacts:
     - path: res/OpenXRay.*.7z
       name: OpenXRay.*.7z
