@@ -93,7 +93,7 @@
         4275 : non dll-interface class 'x' used as base for dll-interface class 'y' 
         4458 : declaration of 'x' hides class member
       -->
-      <DisableSpecificWarnings>4251;4275;4458;4005;4595;4459</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4251;4275;4458;4005;4595;4459;4091</DisableSpecificWarnings>
       <!--
         LUABIND_DYNAMIC_LINK : self-explanatory
         MSVC;dSINGLE;WIN32 : for ODE
