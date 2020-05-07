@@ -38,7 +38,7 @@ for:
     project: cs/engine.sln
     verbosity: minimal
   after_build:
-    - cmd: cd cs && xr_pack_build.cmd
+    - cs/xr_pack_build.cmd
   artifacts:
     - path: res/OpenXRay.*.7z
       name: OpenXRay.*.7z
